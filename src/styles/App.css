@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    position: sticky; 
+    top: 0;
+    z-index: 1; 
+    display: flex;
+    justify-content: right;
+    background-color: #1D1D41 !important;
+}
+
+.sidebar-menu {
+    height: 100vh; 
+    border-right: 0;
+    background-color: #1D1D41;
+    color: #ffffff;
+}
+
+.ant-menu { 
+    padding: 10px;
+}
