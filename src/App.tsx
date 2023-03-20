@@ -7,7 +7,7 @@ import {
   TagOutlined,
 } from '@ant-design/icons';
 import "./styles/App.css";
-import { StatsPage } from './pages';
+import { FinancePage, MarketingPage, SettingsPage, StatsPage } from './pages';
 import { MenuInfo } from 'rc-menu/lib/interface';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import { Header } from 'antd/es/layout/layout';
@@ -77,6 +77,9 @@ const App = () => {
               <Routes>
                 <Route path="/" element={<StatsPage/>}/>
                 <Route path="/stats" element={<StatsPage/>}/>
+                <Route path="/settings" element={<SettingsPage/>}/>
+                <Route path="/finance" element={<FinancePage/>}/>
+                <Route path='/marketing' element={<MarketingPage/>}/>
               </Routes>
         </Content>
       </Layout>
